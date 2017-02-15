@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "app_function": "app.app", 
+	"api_key_required": true,
+	"keep_warm": false,
+        "s3_bucket": "zappa-xxxxx",
+	"remote_env": "s3://dev-bucket/sql-dev.json"
+    },
+    "test": {
+	"extends": "dev",
+	"s3_bucket": "zappa-xxxxx",
+	"remote_env": "s3://test-bucket/sql-test.json"
+    },
+    "prod": {
+	"extends": "dev",
+	"s3_bucket": "zappa-xxxxx",
+	"remote_env": "s3://prod-bucket/sql-prod.json"
+    }
+}

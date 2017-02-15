@@ -1,2 +1,2 @@
 # sql2uri-lambda
-Register reports with lambda and write results to Gdrive
+Register reports with AWS Dynamodb and write results to Gdrive
